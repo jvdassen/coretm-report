@@ -48,6 +48,7 @@ export default {
 
       var parser = new DOMParser()
       var xmlDoc = parser.parseFromString(data, 'text/xml')
+      window.xmlDoc = xmlDoc
       var threatRecords = [...xmlDoc.querySelectorAll('[coretm-type=threat]')]
       var threats = threatRecords.map((el) => {
         return {
@@ -57,6 +58,15 @@ export default {
         }
       })
       this.threats = threats
+      var assetObjects = [...xmlDoc.querySelectorAll('mxCell')].filter(e => e?.attributes['style']?.textContent.includes('E3C800'))
+      assetsCells = assetsObjects.map(a => a.parentNode)
+      var threats = threatRecords.map((el) => {
+        return {
+          id: el.id,
+          label: el.getAttribute('label'),
+          description: el.getAttribute('description') || '...'
+        }
+      })
     }
   }
 };
