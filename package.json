@@ -15,7 +15,8 @@
   "dizmo": {
     "settings": {
       "attributes": {
-        "settings/usercontrols/allowresize": true
+        "settings/usercontrols/allowresize": true,
+	"settings/framecolor": "#2d2c2c"
       },
       "bundle-identifier": "com.vonderassen.coretm_report",
       "bundle-name": "coretm-report",

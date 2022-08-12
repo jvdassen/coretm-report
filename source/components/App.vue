@@ -58,19 +58,27 @@ export default {
         }
       })
       this.threats = threats
-      var assetObjects = [...xmlDoc.querySelectorAll('mxCell')].filter(e => e?.attributes['style']?.textContent.includes('E3C800'))
-      assetsCells = assetsObjects.map(a => a.parentNode)
-      var threats = threatRecords.map((el) => {
-        return {
-          id: el.id,
-          label: el.getAttribute('label'),
-          description: el.getAttribute('description') || '...'
-        }
-      })
     }
   }
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+table.vgt-table {
+  background-color: #2d2c2c !important;
+  border: #535151 !important;
+}
+
+.vgt-table.bordered td, .vgt-table.bordered th {
+  border: none !important;
+}
+
+.vgt-table thead th {
+  color: #edf3ff !important;
+  background: #3d3d3d !important;
+}
+
+table.vgt-table td {
+  color: #c8cedb !important;
+}
 </style>
