@@ -15,10 +15,11 @@
   "dizmo": {
     "settings": {
       "attributes": {
-        "settings/usercontrols/allowresize": true
+        "settings/usercontrols/allowresize": true,
+	"settings/framecolor": "#2d2c2c"
       },
       "bundle-identifier": "com.vonderassen.coretm_assets",
-      "bundle-name": "assets",
+      "bundle-name": "Assets",
       "category": "",
       "height": 360,
       "tags": [
