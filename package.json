@@ -1,6 +1,6 @@
 {
   "name": "coretm-report",
-  "description": "Coretm Report",
+  "description": "Coretm Assets",
   "version": "0.0.0",
   "author": {
     "name": "Jan von der Assen",
@@ -17,8 +17,8 @@
       "attributes": {
         "settings/usercontrols/allowresize": true
       },
-      "bundle-identifier": "com.vonderassen.coretm_report",
-      "bundle-name": "coretm-report",
+      "bundle-identifier": "com.vonderassen.coretm_assets",
+      "bundle-name": "assets",
       "category": "",
       "height": 360,
       "tags": [
